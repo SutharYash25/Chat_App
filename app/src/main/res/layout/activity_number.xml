@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".enterNumber">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number Verification"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/numberverification"
+        android:textSize="20sp"
+        android:layout_marginTop="100sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sendsms_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:gravity="center"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@+id/numberverification"
+        android:text="ChatApp Will Send an SMS message to verify Your Phone number Enter Your phone number"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_below="@id/sendsms_id">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="100dp"
+            android:layout_height="43dp"
+            android:background="@drawable/edittext"
+            app:ccp_showFlag="false"
+            app:ccp_textSize="15dp"
+            android:layout_marginTop="50dp"
+            />
+
+        <EditText
+            android:id="@+id/phonenumber_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/ccp"
+            android:background="@drawable/edittext"
+            android:hint="@string/enter_phone_number"
+            android:inputType="number"
+
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/nextbutton_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_id"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext"
+        android:padding="5dp"
+        android:text="Send OTP "
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

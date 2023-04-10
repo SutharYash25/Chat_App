@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enterOTP"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Code Verification"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/numberverification"
+        android:textSize="20sp"
+        android:layout_marginTop="100sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sendsms_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/numberverification"
+        android:text="Enter a six digit OTP code here"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="Enter OTP Here"
+        android:textColor="@color/black"
+        android:id="@+id/entercode"/>
+
+
+    <TextView
+        android:id="@+id/sendocde_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberverification"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10sp"
+        android:text="Send Code Again"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/nextbutton1_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonenumber_id"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Verify"
+        android:textSize="18dp" />
+</LinearLayout>
